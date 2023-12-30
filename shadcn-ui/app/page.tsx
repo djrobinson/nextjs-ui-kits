@@ -51,9 +51,14 @@ const data = [
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-6 p-12 justify-center">
         {data.map(({ name, description, image }) => (
-          <CardDemo />
+          <CardDemo
+            key={name}
+            name={name}
+            description={description}
+            image={image}
+          />
         ))}
       </div>
     </main>
