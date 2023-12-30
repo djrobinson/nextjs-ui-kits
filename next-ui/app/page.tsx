@@ -1,5 +1,4 @@
-import { Button } from "@nextui-org/button";
-import Image from "next/image";
+import CardDemo from "@/components/CardDemo";
 
 const data = [
   {
@@ -52,20 +51,13 @@ const data = [
 export default function Home() {
   return (
     <main>
-      {data.map(({ name, description, image }) => (
-        <div key={name}>
-          <Image
-            src={image}
-            alt={name}
-            width={300}
-            height={300}
-            className="flex-none w-8 h-8"
-          />
-          <h2>{name}</h2>
-          <p>{description}</p>
-          <Button>Click me</Button>
-        </div>
-      ))}
+      <div className="flex flex-wrap gap-6 min-h-screen p-12 overflow-y:scroll">
+        {data.map(({ name, description, image }, i) => (
+          <div key={i} className="inline-flex">
+            <CardDemo name={name} description={description} image={image} />
+          </div>
+        ))}
+      </div>
     </main>
   );
 }
