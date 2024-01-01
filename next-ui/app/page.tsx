@@ -51,7 +51,7 @@ const data = [
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-wrap gap-6 min-h-screen p-12 overflow-y:scroll">
+      <div className="flex flex-wrap gap-6 p-12 overflow-y:scroll">
         {data.map(({ name, description, image }, i) => (
           <div key={i} className="inline-flex">
             <CardDemo name={name} description={description} image={image} />
