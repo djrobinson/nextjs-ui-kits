@@ -40,4 +40,6 @@ This is a weird one, but seems to be gaining popularity rapidly. [This is NOT a 
 
 ## NextUI
 
-**Works with React Server Components? TBD**
+**Works with React Server Components? Yes**
+
+Similar to the familiar NPM installed component libraries in non-NextJS world. They handle the `use client` addition for applicable components in a much more informed way: https://nextui.org/docs/frameworks/nextjs#app-directory-setup.
