@@ -56,7 +56,7 @@ export default function Home() {
         <h2 className="text-3xl font-extrabold">Projects</h2>
         <p className="text-slate-400 text-lg">
           Filter and sort through the item collection to find ideal
-          opportunities, then click "Learn more" to purchase.
+          opportunities, then click Learn more to purchase.
         </p>
         <div className="gap-8 grid justify-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 overflow-y:scroll mt-8">
           {data.map(({ name, description, image }, i) => (
