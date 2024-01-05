@@ -7,7 +7,7 @@ import {
   Image,
 } from "@nextui-org/react";
 
-export default function CardDemo({ name, description, image }) {
+export default function CardDemo({ name, description, image }: any) {
   console.log("where is this logging");
 
   return (
