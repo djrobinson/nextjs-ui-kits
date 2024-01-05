@@ -16,7 +16,7 @@ const data = [
     image: "https://picsum.photos/300/180",
   },
   {
-    name: "Projec 3",
+    name: "Project 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "https://picsum.photos/300/180",
   },

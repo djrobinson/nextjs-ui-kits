@@ -29,13 +29,19 @@ const notifications = [
 
 type CardProps = React.ComponentProps<typeof Card>;
 
+interface CardDemoProps extends CardProps {
+  name: string;
+  description: string;
+  image: string;
+}
+
 export function CardDemo({
   name,
   description,
   image,
   className,
   ...props
-}: CardProps) {
+}: CardDemoProps) {
   return (
     <Card className={cn("w-[300px]", className)} {...props}>
       <CardHeader>

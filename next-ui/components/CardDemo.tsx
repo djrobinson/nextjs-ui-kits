@@ -95,6 +95,7 @@ export default function CardDemo({ name, description, image }: any) {
             </div>
           </Chip>
         </div>
+
         <div className="mt-2 text-gray-400">
           <h4>Northeast</h4>
         </div>

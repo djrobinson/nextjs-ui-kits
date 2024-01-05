@@ -1,4 +1,4 @@
-import Card from "@/components/card";
+import CardDemo from "@/components/CardDemo";
 
 const data = [
   {
@@ -12,7 +12,7 @@ const data = [
     image: "https://picsum.photos/300/180",
   },
   {
-    name: "Projec 3",
+    name: "Project 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "https://picsum.photos/300/180",
   },
@@ -51,23 +51,23 @@ const data = [
 export default function Home() {
   return (
     <main>
-      <div className="bg-white">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-            Customers also purchased
-          </h2>
-
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {data.map(({ name, description, image }) => (
-              <Card
-                key={name}
-                name={name}
-                description={description}
-                image={image}
-                price={"$1,999.99"}
-              />
-            ))}
-          </div>
+      <h1 className="text-5xl text-center">Tailwind UI</h1>
+      <div className="p-12">
+        <h2 className="text-3xl font-extrabold">Projects</h2>
+        <p className="text-slate-400 text-lg">
+          Filter and sort through the item collection to find ideal
+          opportunities, then click Learn more to purchase
+        </p>
+        <div className="gap-8 grid justify-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 overflow-y:scroll mt-8">
+          {data.map(({ name, description, image }) => (
+            <CardDemo
+              key={name}
+              name={name}
+              description={description}
+              image={image}
+              price={"$1,999.99"}
+            />
+          ))}
         </div>
       </div>
     </main>
