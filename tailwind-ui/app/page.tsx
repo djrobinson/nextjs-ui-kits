@@ -2,49 +2,49 @@ import Card from "@/components/card";
 
 const data = [
   {
-    name: "Next.js",
+    name: "Project 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "Vercel",
+    name: "Project 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "TypeScript",
+    name: "Projec 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "Tailwind CSS",
+    name: "Project 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "ESLint",
+    name: "Project 5",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "Prettier",
+    name: "Project 7",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "PostCSS",
+    name: "Project 8",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "Jest",
+    name: "Project 9",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
   {
-    name: "React Testing Library",
+    name: "Project 10",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "https://picsum.photos/300",
+    image: "https://picsum.photos/300/180",
   },
 ];
 
