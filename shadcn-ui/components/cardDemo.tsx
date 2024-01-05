@@ -4,10 +4,8 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -44,13 +42,10 @@ export function CardDemo({
 }: CardDemoProps) {
   return (
     <Card className={cn("w-[300px]", className)} {...props}>
-      <CardHeader>
-        <CardTitle>Notifications</CardTitle>
-        <CardDescription>You have 3 unread messages.</CardDescription>
+      <CardHeader className="p-0">
+        <Image alt="nextui logo" height={180} src={image} width={300} />
       </CardHeader>
-      <CardContent className="grid gap-4">
-        <Image alt="nextui logo" height={300} src={image} width={300} />
-
+      <CardContent className="grid gap-4 mt-4">
         <div>
           {notifications.map((notification, index) => (
             <div
