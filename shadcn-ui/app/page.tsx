@@ -1,4 +1,4 @@
-import { CardDemo } from "@/components/gitfix";
+import { CardDemo } from "@/components/CardDemo";
 
 const data = [
   {
