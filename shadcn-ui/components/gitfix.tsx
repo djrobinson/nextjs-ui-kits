@@ -41,7 +41,7 @@ export function CardDemo({
           <Badge color="secondary" className="flex space-between">
             <div className="flex justify-between align-center">
               <svg
-                className="h-3 w-3 mt-1 mr-1"
+                className="h-4 w-4 mr-1"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -60,7 +60,7 @@ export function CardDemo({
           <Badge color="secondary">
             <div className="flex justify-between align-center">
               <svg
-                className="h-3 w-3 mt-1 mr-1"
+                className="h-4 w-4 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -80,7 +80,7 @@ export function CardDemo({
           <Badge color="secondary">
             <div className="flex justify-between align-center">
               <svg
-                className="h-3 w-3 mr-2 mt-1"
+                className="h-4 w-4 mr-2"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
