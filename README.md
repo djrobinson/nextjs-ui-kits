@@ -33,9 +33,7 @@ It seems to take a similar approach to Shadcn, but requires fewer dependencies. 
 
 **Deployed Example:**
 
-**Description:** This is a weird one, but seems to be gaining popularity rapidly. [This is NOT a component library](https://ui.shadcn.com/docs). Like Tailwind UI, it's really just a collection of prestyled tailwind components, however it utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of `class-variance-authority` also makes customizing these components super straightforward. However, there is a learning curve to the opinionated toolset Shadcn uses, and ultimately it's a set of UI components that you must maintain.
-
-Stats: 46 unique components
+**Description:** Like Tailwind UI, it's really just a collection of prestyled tailwind components, however it utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of `class-variance-authority` also makes customizing these components super straightforward. However, there is a learning curve to the opinionated toolset Shadcn uses, and ultimately it's a set of UI components that you must maintain.
 
 ### Pros
 
@@ -54,7 +52,7 @@ Stats: 46 unique components
 
 **Deployed Example:**
 
-**Description:** Similar to the familiar NPM installed component libraries in non-NextJS world. They handle the `use client` addition for applicable components in a much more informed way: https://nextui.org/docs/frameworks/nextjs#app-directory-setup.
+**Description:** Similar to the familiar NPM installed component libraries in non-NextJS world. They handle the `use client` addition for applicable components in a way that doesn't require you add it to your components: https://nextui.org/docs/frameworks/nextjs#app-directory-setup.
 
 ### Pros
 
@@ -66,4 +64,3 @@ Stats: 46 unique components
 
 - Not as customizable (But there are thoughtful ways to override https://nextui.org/docs/customization/override-styles)
 - Less component variety than Shadcn (36 unique components)
--
