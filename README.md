@@ -19,7 +19,6 @@ The goal of this repo is to compare and contrast how popular UI Libraries integr
 ### Cons
 
 - Verbose
-- Requires roll your own theming & animations
 - These are not components, just code snippets
 
 Stats:

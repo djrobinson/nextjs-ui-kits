@@ -9,9 +9,9 @@ type Props = {
 
 export default function Card({ image, name, description, price }: Props) {
   return (
-    <div className="column">
+    <div className="column hover:opacity-50 hover:border-solid hover:border border-gray-light rounded-lg cursor-pointer">
       <div key={name} className="group relative">
-        <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75">
+        <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none  mb-2">
           <Image
             width={300}
             height={300}
@@ -20,7 +20,9 @@ export default function Card({ image, name, description, price }: Props) {
             className="h-full w-full object-cover object-center lg:h-full lg:w-full"
           />
         </div>
-        <h3 className="text-large font-extrabold dark:text-white/80">{name}</h3>
+        <h3 className="font-sans text-2xl font-extrabold dark:text-white/80">
+          {name}
+        </h3>
         <div className="mt-2 flex flex-row gap-2">
           <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
             <div className="flex justify-between align-center">
@@ -37,7 +39,7 @@ export default function Card({ image, name, description, price }: Props) {
                 <line x1="12" y1="1" x2="12" y2="23" />{" "}
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
-              <p>PTC</p>
+              <p>XTC</p>
             </div>
           </span>
 
