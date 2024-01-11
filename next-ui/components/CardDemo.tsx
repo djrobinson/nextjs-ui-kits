@@ -17,13 +17,7 @@ export default function CardDemo({ name, description, image }: any) {
       className="border-none rounded-small shadow-none"
     >
       <CardHeader className="p-0">
-        <Image
-          className="rounded-none"
-          alt={description}
-          height={200}
-          src={image}
-          width={320}
-        />
+        <Image className="rounded-none" alt={description} src={image} />
       </CardHeader>
       <Chip
         className="absolute z-10 right-3 top-3 bg-white border-black border-2"
@@ -42,9 +36,9 @@ export default function CardDemo({ name, description, image }: any) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 {" "}
                 <line x1="12" y1="1" x2="12" y2="23" />{" "}
@@ -63,9 +57,9 @@ export default function CardDemo({ name, description, image }: any) {
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
                   d="M13 10V3L4 14h7v7l9-11h-7z"
                 />
               </svg>
@@ -81,9 +75,9 @@ export default function CardDemo({ name, description, image }: any) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 {" "}
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />{" "}
