@@ -1,22 +1,29 @@
 # NextJS UI Component Library Analysis
 
-The goal of this repo is to compare and contrast how popular UI Libraries integrate with Next JS. The 3 libraries analyzed
+The goal of this repo is to compare and contrast how popular UI Libraries integrate with Next JS.
 
 ## Summary of Findings
 
 ### Top Contenders
 
-- NextUI - Best choice for speed, out-of-the-box styling, and low learning curve.
-- Shadcn/UI - Best choice when you're ready to build your own in-house component library and dedicate some time to theming.
+- NextUI - Best choice for out-of-the-box styling and low learning curve and don't mind missing a few complex components and overriding some styles with tailwind classes.
+- Shadcn/UI - Most feature-rich choice, ideal for building your own in-house component library and don't mind dedicating some styling time up front.
 
-### Others Analyzed
+### Others Analyzed (and why they didn't make the cut)
 
-- Mantine -
-- Tailwind UI -
-- Catalyst -
-- Chakra -
-- Ant Design -
-- Evergreen -
+- [Mantine](https://mantine.dev/) - full featured development toolkit that includes prebuilt components and utility react hooks that speeds up development.
+  - Loved this one, but its compound components [don't work with SSR](https://mantine.dev/guides/next/#compound-components-in-server-components) and it's not tailwindcss based so it has it's own theming approach, so it barely misses the cut.
+- [Tailwind UI](https://tailwindui.com/) - Tailwind UI is not as much a component library as it is a collection of copy/pastable tailwind templates.
+  - Not a proper component library, would prefer more batteries included.
+  - Not free
+- [Catalyst](https://tailwindcss.com/blog/introducing-catalyst) - Built by the Tailwind folks, similar design philosophy to Shadcn where it's a "dissappearing UI kit" that lives alongside your code and you edit directly.
+  - Too early phase. First introduced in December 20, 2023 and not enough component variety to beat out Shadcn
+- [Chakra](https://github.com/chakra-ui/chakra-ui/issues/7649#issuecomment-1571777824)
+  - [Doesn't support](https://chakra-ui.com/getting-started/nextjs-app-guide#setup-provider) server components.
+- [Ant Design](https://ant.design/)
+  - App router [isn't compatible](https://ant.design/docs/react/use-with-next) with subcomponents
+- [Evergreen](https://evergreen.segment.com/)
+  - Doesn't support server components.
 
 ## NextUI
 

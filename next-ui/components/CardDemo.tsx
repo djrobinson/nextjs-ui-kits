@@ -24,12 +24,16 @@ export default function CardDemo({ name, description, image }: any) {
         radius="sm"
         variant="bordered"
       >
-        <p className="font-extrabold">$50M</p>
+        $50M
       </Chip>
       <CardBody className="flex flex-column p-0 pt-2">
         <h3 className="text-large font-extrabold dark:text-white/80">{name}</h3>
         <div className="mt-2 flex flex-row gap-2">
-          <Chip radius="md" color="secondary" className="flex space-between">
+          <Chip
+            radius="md"
+            color="primary"
+            className="flex space-between text-background"
+          >
             <div className="flex justify-between align-center">
               <svg
                 className="h-3 w-3 mt-1 mr-1"
@@ -48,7 +52,11 @@ export default function CardDemo({ name, description, image }: any) {
             </div>
           </Chip>
 
-          <Chip radius="md" color="secondary">
+          <Chip
+            radius="md"
+            color="primary"
+            className="flex space-between text-background"
+          >
             <div className="flex justify-between align-center">
               <svg
                 className="h-3 w-3 mt-1 mr-1"
@@ -68,7 +76,11 @@ export default function CardDemo({ name, description, image }: any) {
           </Chip>
         </div>
         <div className="mt-2 flex flex-row gap-2">
-          <Chip radius="md" color="secondary">
+          <Chip
+            radius="md"
+            color="primary"
+            className="flex space-between text-background"
+          >
             <div className="flex justify-between align-center">
               <svg
                 className="h-3 w-3 mr-2 mt-1"
@@ -94,7 +106,7 @@ export default function CardDemo({ name, description, image }: any) {
           <h4>Northeast</h4>
         </div>
         <div className="mt-2">
-          <Button className="text-tiny text-white" color="secondary" size="sm">
+          <Button className="text-tiny text-white" color="primary" size="sm">
             Learn more
           </Button>
         </div>

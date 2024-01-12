@@ -38,7 +38,7 @@ export function CardDemo({
       <CardContent className="grid gap-4 mt-4">
         <h3 className="text-large font-extrabold dark:text-white/80">{name}</h3>
         <div className="flex flex-row gap-2">
-          <Badge color="secondary" className="flex space-between">
+          <Badge color="primary" className="flex space-between">
             <div className="flex justify-between align-center">
               <svg
                 className="h-4 w-4 mr-1"
@@ -53,11 +53,11 @@ export function CardDemo({
                 <line x1="12" y1="1" x2="12" y2="23" />{" "}
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
               </svg>
-              <p>PTC</p>
+              <p>XTC</p>
             </div>
           </Badge>
 
-          <Badge color="secondary">
+          <Badge color="primary">
             <div className="flex justify-between align-center">
               <svg
                 className="h-4 w-4 mr-1"
@@ -77,7 +77,7 @@ export function CardDemo({
           </Badge>
         </div>
         <div className="flex flex-row gap-2">
-          <Badge color="secondary">
+          <Badge color="primary">
             <div className="flex justify-between align-center">
               <svg
                 className="h-4 w-4 mr-2"
@@ -104,7 +104,7 @@ export function CardDemo({
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="text-tiny text-white" color="secondary" size="sm">
+        <Button className="text-tiny text-white" color="primary" size="sm">
           Learn more
         </Button>
       </CardFooter>
