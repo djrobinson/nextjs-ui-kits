@@ -7,7 +7,52 @@ The goal of this repo is to compare and contrast how popular UI Libraries integr
 ### Top Contenders
 
 - NextUI - Best choice for out-of-the-box styling and low learning curve and don't mind missing a few complex components and overriding some styles with tailwind classes.
-- Shadcn/UI - Most feature-rich choice, ideal for building your own in-house component library and don't mind dedicating some styling time up front.
+- Shadcn/UI - Most feature-rich choice, ideal for building your own in-house component library and don't mind learning a few tools to customize and extend it.
+
+## NextUI
+
+**Deployed Example:**
+
+**Description:** Well styled & animated UI kit purpose built for nextjs using taiwindcss. Similar to the familiar NPM installed component libraries in non-NextJS world. They handle the `use client` addition for applicable components in a way that doesn't require you add it to your components: https://nextui.org/docs/frameworks/nextjs#app-directory-setup.
+
+### Pros
+
+- Simple, familiar npm package install
+- Richest styling and animations out of the box
+- Purpose built for Next.js, includes routing integration (Link component)
+- Only 2 dependencies
+
+### Cons
+
+- Not as customizable as Shadcn 
+- Override methods/slots require verbose tailwindcss classes and not much reuse https://nextui.org/docs/customization/override-styles
+- Extending the theme by adding a new variant is clunky and requires knowledge of source code: https://nextui.org/docs/customization/custom-variants#extend-the-original-component-variants
+- Less component variety than Shadcn (36 unique components, no complex componentry like datepicker & complex datagrids)
+
+## Shadcn/UI
+
+https://mwskwong.com/blog/when-not-to-use-shadcn-ui
+
+**Deployed Example:**
+
+**Description:** This is not a component library as much as it is super clean boilerplate code for you to build your own component library. It is not an npm package, but instead uses a CLI tool to copy the boilerplate into your code. It utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of `class-variance-authority` also makes customizing these components super straightforward and well organized. The unique paradigm of the "disappearing UI kit" enables devs to serve themselves when changing the behavior of a component, without requiring weird wrapper components or submitting a PR to an open source project.
+
+### Pros
+
+- Richest component featureset of all tailwind-based options researched (46 components, regular new releases. Includes complex components like datapickers and complex data grids)
+- CLI makes it feel like an npm module, but it lives alongside application code
+- Completely customizable. You own the code.
+- Simple cli that handles bootstrapping the project & imports component code
+- Open source project has massive traction & is wildly popular
+- Paradigm enables amazing self service
+
+### Cons
+
+- Learning curve required to modify the components themselves
+- Adds many npm packages that need to be maintained (radix-ui, cva, etc)
+- Base styling is super bland, feels like OpenAI
+- I'm skeptical by how much hype it's gotten in 2023
+- Paradigm could just be a weird dev fad
 
 ### Others Analyzed (and why they didn't make the cut)
 
@@ -24,45 +69,3 @@ The goal of this repo is to compare and contrast how popular UI Libraries integr
   - App router [isn't compatible](https://ant.design/docs/react/use-with-next) with subcomponents
 - [Evergreen](https://evergreen.segment.com/)
   - Doesn't support server components.
-
-## NextUI
-
-**Deployed Example:**
-
-**Description:** Similar to the familiar NPM installed component libraries in non-NextJS world. They handle the `use client` addition for applicable components in a way that doesn't require you add it to your components: https://nextui.org/docs/frameworks/nextjs#app-directory-setup.
-
-### Pros
-
-- Simple, familiar npm package install
-- Only 2 dependencies
-- Richest styling and animations out of the box
-- Purpose built for Next.js, includes routing integration
-- No additional config beyond what tailwind requires
-
-### Cons
-
-- Not as customizable as Shadcn (But there are thoughtful ways to override https://nextui.org/docs/customization/override-styles)
-- Less component variety than Shadcn (36 unique components, no complex componentry like datepicker & complex datagrids)
-
-## Shadcn/UI
-
-https://mwskwong.com/blog/when-not-to-use-shadcn-ui
-
-**Deployed Example:**
-
-**Description:** Like Tailwind UI, it's really just a collection of prestyled tailwind components, however it utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of `class-variance-authority` also makes customizing these components super straightforward. However, there is a learning curve to the opinionated toolset Shadcn uses, and ultimately it's a set of UI components that you must maintain.
-
-### Pros
-
-- Richest componentry of the 3 options (46 components, regular new releases. Includes complex components like datapickers)
-- Feels like an npm module, but lives alongside application code
-- Completely customizable. You own the code.
-- Simple cli that handles bootstrapping the project & imports component code
-- Massive traction
-
-### Cons
-
-- Learning curve required to modify the components themselves
-- Adds many npm packages that need to be maintained (radix-ui, cva, etc)
-- Base styling is super bland, feels like OpenAI
-- Potentially overhyped by twitter. Paradigm is super different from traditional UI kits
