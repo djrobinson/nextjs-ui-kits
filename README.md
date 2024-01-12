@@ -31,8 +31,6 @@ The goal of this repo is to compare and contrast how popular UI Libraries integr
 
 ## Shadcn/UI
 
-https://mwskwong.com/blog/when-not-to-use-shadcn-ui
-
 **Deployed Example:**
 
 **Description:** This is not a component library as much as it is super clean boilerplate code for you to build your own component library. It is not an npm package, but instead uses a CLI tool to copy the boilerplate into your code. It utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of `class-variance-authority` also makes customizing these components super straightforward and well organized. The unique paradigm of the "disappearing UI kit" enables devs to serve themselves when changing the behavior of a component, without requiring weird wrapper components or submitting a PR to an open source project.
@@ -48,6 +46,7 @@ https://mwskwong.com/blog/when-not-to-use-shadcn-ui
 
 ### Cons
 
+- The code is a part of your codebase, so you have to maintain it and can't simply `npm update`
 - Learning curve required to modify the components themselves
 - Adds many npm packages that need to be maintained (radix-ui, cva, etc)
 - Base styling is super bland, feels like OpenAI
