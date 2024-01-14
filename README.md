@@ -57,6 +57,8 @@ The goal of this repo is to compare and contrast how popular UI Libraries integr
 
 - [Mantine](https://mantine.dev/) - full featured development toolkit that includes prebuilt components and utility react hooks that speeds up development.
   - Loved this one, but its compound components [don't work with SSR](https://mantine.dev/guides/next/#compound-components-in-server-components) and it's not tailwindcss based so it has it's own theming approach, so it barely misses the cut.
+- [Radix UI](https://www.radix-ui.com/) - Set of low level component library primitives and theming that enable teams to build their own component libraries. Has easy tailwindcss integration
+  - Shadcn/UI uses radix primitives under the hood and is significantly more feature rich. Unless there's something specific about Shadcn/UI you want to override, there's nothing that would make me choose Radix over Shadcn/UI 
 - [Tailwind UI](https://tailwindui.com/) - Tailwind UI is not as much a component library as it is a collection of copy/pastable tailwind templates.
   - Not a proper component library, would prefer more batteries included.
   - Not free
