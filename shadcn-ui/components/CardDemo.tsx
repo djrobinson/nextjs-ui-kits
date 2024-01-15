@@ -23,11 +23,11 @@ export function CardDemo({
   image,
   className,
   ...props
-}: CardDemoProps) {
+}: any) {
   return (
-    <Card className={cn("w-[300px]", className)} {...props}>
-      <CardHeader className="p-0 relative">
-        <Image alt="nextui logo" height={180} src={image} width={300} />
+    <Card className={cn( className)} {...props}>
+      <CardHeader className="relative h-[200px]">
+        <Image alt="nextui logo" fill={true} src={image}  />
         <Badge
           className="absolute z-10 right-3 top-3 bg-white border-black border-2"
           variant="outline"
@@ -38,7 +38,7 @@ export function CardDemo({
       <CardContent className="grid gap-4 mt-4">
         <h3 className="text-large font-extrabold dark:text-white/80">{name}</h3>
         <div className="flex flex-row gap-2">
-          <Badge color="primary" className="flex space-between">
+          <Badge variant="newvariant" className="flex space-between">
             <div className="flex justify-between align-center">
               <svg
                 className="h-4 w-4 mr-1"
@@ -57,7 +57,7 @@ export function CardDemo({
             </div>
           </Badge>
 
-          <Badge color="primary">
+          <Badge variant="newvariant">
             <div className="flex justify-between align-center">
               <svg
                 className="h-4 w-4 mr-1"
@@ -77,7 +77,7 @@ export function CardDemo({
           </Badge>
         </div>
         <div className="flex flex-row gap-2">
-          <Badge color="primary">
+          <Badge variant="newvariant">
             <div className="flex justify-between align-center">
               <svg
                 className="h-4 w-4 mr-2"
