@@ -6,6 +6,10 @@ import {
   Chip,
   Image,
 } from "@nextui-org/react";
+import { MyButton } from "./MyButton";
+import { MyChip } from "./MyChip";
+
+
 
 export default function CardDemo({ name, description, image }: any) {
   console.log("where is this logging");
@@ -29,7 +33,7 @@ export default function CardDemo({ name, description, image }: any) {
       <CardBody className="flex flex-column p-0 pt-2">
         <h3 className="text-large font-extrabold dark:text-white/80">{name}</h3>
         <div className="mt-2 flex flex-row gap-2">
-          <Chip
+          <MyChip
             radius="md"
             color="primary"
             className="flex space-between text-background"
@@ -50,7 +54,7 @@ export default function CardDemo({ name, description, image }: any) {
               </svg>
               <p>XTC</p>
             </div>
-          </Chip>
+          </MyChip>
 
           <Chip
             radius="md"
@@ -110,6 +114,12 @@ export default function CardDemo({ name, description, image }: any) {
             Learn more
           </Button>
         </div>
+        <div className="mt-2">
+          <MyButton color="violet" size="xs">
+            Learn more
+          </MyButton>
+        </div>
+
       </CardBody>
     </Card>
   );
