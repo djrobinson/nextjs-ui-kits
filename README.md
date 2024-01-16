@@ -14,7 +14,7 @@ Choose the following library if...
 
 **Don't** choose the following library if...
 
-- NextUI - you want to override some styles and implement your own variants.
+- NextUI - you want to override many component styles and implement your own variants.
 - Shadcn/UI - you don't want to learn any new tools and would prefer that your ui kit was an npm package.
 - TailwindUI - you want a more batteries included/opinionated UI kit, might not be the best long-term solution.
 
