@@ -74,6 +74,7 @@ Choose the following library if...
 - Learning curve required to modify the components themselves
 - Adds many npm packages that need to be maintained (radix-ui, cva, etc)
 - Base styling is super bland, feels like OpenAI
+- Less copy/paste examples than the other 2
 - I'm skeptical by how much hype it's gotten in 2023
 
 
