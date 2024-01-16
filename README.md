@@ -8,7 +8,7 @@ The goal of this repo is to compare and contrast how popular UI Libraries integr
 
 Choose the following library if...
 
-- [NextUI](https://nextui.org/) - you generally like their out-of-the-box styling, need a low learning curve, and like the feel of a traditional npm module UI kit.
+- [NextUI](https://nextui.org/) - you like their out-of-the-box styling, need a low learning curve, and like the feel of a traditional npm module UI kit.
 - [Shadcn/UI](https://ui.shadcn.com/) - you want the widest variety of components with the most features, are hoping to develop an in-house component library long-term, and don't mind learning a few tools to customize and extend it.
 - [TailwindUI](https://tailwindui.com/) - you are rapid prototyping and don't mind spending money. You want minimalist tooling, 0 learning curve, and want the widest variety of styled copy/paste code examples.
 
@@ -43,12 +43,12 @@ Choose the following library if...
 
 - Not as customizable as Shadcn. Two different methods to override styles and they're not straighforward
   - Customizing component styles by adding a new variant is clunky and requires [knowledge of source code](https://nextui.org/docs/customization/custom-variants#extend-the-original-component-variants)
-  - You have to learn [tailwind-variants](https://www.tailwind-variants.org/) to use & customize
+  - You have to learn [tailwind-variants](https://www.tailwind-variants.org/) to use & customize (I find Shadcn's use of class-variance-authority more intuitive)
 - Less component variety than Shadcn (36 unique components, no complex componentry like datepicker & complex datagrids)
 
 ## Shadcn/UI
 
-**Description:** This is not a component library as much as it is super clean boilerplate code for you to build your own component library. It is not an npm package, but instead uses a CLI tool to copy the boilerplate into your code. It utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of `class-variance-authority`, `clsx`, and `tailwind-merge` also makes customizing these components super straightforward and well organized. The unique paradigm of the "disappearing UI kit" enables devs to serve themselves when changing the behavior of a component, without requiring weird wrapper components or submitting a PR to an open source project.
+**Description:** This is not a component library as much as it is super clean boilerplate code for you to build your own component library. It is not an npm package, but instead uses a CLI tool to copy the boilerplate into your code. It utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of [`class-variance-authority`](https://cva.style/docs), [`clsx`](https://github.com/lukeed/clsx), and [`tailwind-merge`](https://github.com/dcastil/tailwind-merge) give the components a good developer experience. The unique paradigm of the "disappearing UI kit" enables devs to serve themselves when changing the behavior of a component, without requiring weird wrapper components or submitting a PR to an open source project.
 
 
 - [Dependencies](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/package.json)
