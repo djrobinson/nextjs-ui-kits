@@ -28,7 +28,6 @@ Choose the following library if...
   - [Theme Config](https://github.com/djrobinson/nextjs-ui-kits/blob/master/next-ui/tailwind.config.ts)
 - [Example Usage](https://github.com/djrobinson/nextjs-ui-kits/blob/master/next-ui/components/CardDemo.tsx)
 - [Example Customization](https://github.com/djrobinson/nextjs-ui-kits/commit/623cdce1a4b0649bb7404eca4ff832f1b8dd3ca5)
-- [Deployed example](https://master.d1zya8gou55sil.amplifyapp.com/)
 
 
 ### Pros
@@ -57,7 +56,6 @@ Choose the following library if...
   - Theme Config: [File 1](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/tailwind.config.ts) | [File 2](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/app/globals.css)
 - [Example Usage](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/components/CardDemo.tsx)
 - [Example Customization](https://github.com/djrobinson/nextjs-ui-kits/commit/ce2105bfa0d709fed2afbf44ac70313a5d4f3d9e#diff-8d9fa6b59deadb28cfd2fbd8a6cdbb78abfa74983a28588e722b4827980030e7R41)
-- [Deployed example](https://master.d2b9vgyx8o1py9.amplifyapp.com/)
 
 ### Pros
 
@@ -85,7 +83,6 @@ Description: Tailwind UI is a collection of Tailwind CSS templates, so it's less
 - [Dependencies](https://github.com/djrobinson/nextjs-ui-kits/blob/master/tailwind-ui/package.json)
 - [Config](https://github.com/djrobinson/nextjs-ui-kits/blob/master/tailwind-ui/tailwind.config.ts)
 - [Example Usage](https://github.com/djrobinson/nextjs-ui-kits/blob/master/tailwind-ui/components/CardDemo.tsx)
-- [Deployed example](https://master.d3uml7hxpc1zux.amplifyapp.com/)
 
 ### Pros
 
