@@ -1,6 +1,6 @@
 # NextJS UI Component Library Analysis
 
-The goal of this repo is to compare and contrast how popular UI Libraries integrate with Next JS.
+The goal of this repo is to compare and contrast how popular UI Libraries integrate with Next.js.
 
 ## Summary of Findings
 
@@ -20,7 +20,16 @@ Choose the following library if...
 
 ## NextUI
 
-**Description:** Well styled & animated UI kit purpose built for nextjs using taiwindcss. Similar to the familiar NPM installed component libraries in non-NextJS world. They handle the `use client` addition for applicable components in a way that doesn't require you add it to your components: https://nextui.org/docs/frameworks/nextjs#app-directory-setup.
+**Description:** Thoroughly styled & animated UI kit purpose built for Nextjs using taiwindcss. It's an npm package so it's familiar if coming from MUI or similar component libraries.
+
+- [Dependencies](https://github.com/djrobinson/nextjs-ui-kits/blob/master/next-ui/package.json)
+- Config
+  - Setup Config: [Step 1](https://github.com/djrobinson/nextjs-ui-kits/blob/master/next-ui/app/providers.tsx) | [Step 2](https://github.com/djrobinson/nextjs-ui-kits/blob/master/next-ui/app/layout.tsx)
+  - [Theme Config](https://github.com/djrobinson/nextjs-ui-kits/blob/master/next-ui/tailwind.config.ts)
+- [Example Usage](https://github.com/djrobinson/nextjs-ui-kits/blob/master/next-ui/components/CardDemo.tsx)
+- [Example Customization](https://github.com/djrobinson/nextjs-ui-kits/commit/623cdce1a4b0649bb7404eca4ff832f1b8dd3ca5)
+- [Deployed example](https://master.d1zya8gou55sil.amplifyapp.com/)
+
 
 ### Pros
 
@@ -40,6 +49,15 @@ Choose the following library if...
 ## Shadcn/UI
 
 **Description:** This is not a component library as much as it is super clean boilerplate code for you to build your own component library. It is not an npm package, but instead uses a CLI tool to copy the boilerplate into your code. It utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of `class-variance-authority`, `clsx`, and `tailwind-merge` also makes customizing these components super straightforward and well organized. The unique paradigm of the "disappearing UI kit" enables devs to serve themselves when changing the behavior of a component, without requiring weird wrapper components or submitting a PR to an open source project.
+
+
+- [Dependencies](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/package.json)
+- Config
+  - Setup Config: [Step 1](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/components.json)
+  - Theme Config: [File 1](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/tailwind.config.ts) | [File 2](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/app/globals.css)
+- [Example Usage](https://github.com/djrobinson/nextjs-ui-kits/blob/master/shadcn-ui/components/CardDemo.tsx)
+- [Example Customization](https://github.com/djrobinson/nextjs-ui-kits/commit/ce2105bfa0d709fed2afbf44ac70313a5d4f3d9e#diff-8d9fa6b59deadb28cfd2fbd8a6cdbb78abfa74983a28588e722b4827980030e7R41)
+- [Deployed example](https://master.d2b9vgyx8o1py9.amplifyapp.com/)
 
 ### Pros
 
@@ -63,6 +81,11 @@ Choose the following library if...
 
 Description: Tailwind UI is a collection of Tailwind CSS templates, so it's less of a library and more of a copy/pastable set of snippets. It requires no new dependencies and has no developer CSS tooling like Shadcn & NextUI
 
+- [Dependencies](https://github.com/djrobinson/nextjs-ui-kits/blob/master/tailwind-ui/package.json)
+- [Config](https://github.com/djrobinson/nextjs-ui-kits/blob/master/tailwind-ui/tailwind.config.ts)
+- [Example Usage](https://github.com/djrobinson/nextjs-ui-kits/blob/master/tailwind-ui/components/CardDemo.tsx)
+- [Deployed example](https://master.d3uml7hxpc1zux.amplifyapp.com/)
+
 ### Pros
 
 - Fully customizable
@@ -85,7 +108,7 @@ Description: Tailwind UI is a collection of Tailwind CSS templates, so it's less
 ### Others Analyzed (and why they didn't make the cut)
 
 - [Mantine](https://mantine.dev/) - full featured development toolkit that includes prebuilt components and utility react hooks that speeds up development.
-  - Loved this one, but its compound components [don't work with SSR](https://mantine.dev/guides/next/#compound-components-in-server-components) and it's not tailwindcss based so it has it's own theming approach, so it barely misses the cut.
+  - Loved this one, but its compound components [don't work with SSR](https://mantine.dev/guides/next/#compound-components-in-server-components) and it's not tailwindcss based so it has it's own theming approach, so it barely misses the cut
 - [Radix UI](https://www.radix-ui.com/) - Set of low level component library primitives and theming that enable teams to build their own component libraries. Has easy tailwindcss integration
   - Shadcn/UI uses radix primitives under the hood and is significantly more feature rich. Unless there's something specific about Shadcn/UI you want to override, there's nothing that would make me choose Radix over Shadcn/UI 
 - [Catalyst](https://tailwindcss.com/blog/introducing-catalyst) - Built by the Tailwind folks, similar design philosophy to Shadcn where it's a "dissappearing UI kit" that lives alongside your code and you edit directly.
