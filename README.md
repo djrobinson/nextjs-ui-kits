@@ -18,7 +18,7 @@ Choose the following library if...
 - Shadcn/UI - you don't want to learn any new tools and would prefer that your ui kit was an npm package.
 - TailwindUI - you want a more batteries included/opinionated UI kit, might not be the best long-term solution.
 
-## NextUI
+## [NextUI](https://nextui.org/)
 
 **Description:** Thoroughly styled & animated UI kit purpose built for Nextjs using taiwindcss. It's an npm package so it's familiar if coming from MUI or similar component libraries.
 
@@ -45,7 +45,7 @@ Choose the following library if...
   - You have to learn [tailwind-variants](https://www.tailwind-variants.org/) to use & customize (I find Shadcn's use of class-variance-authority more intuitive)
 - Less component variety than Shadcn (36 unique components, no complex componentry like datepicker & complex datagrids)
 
-## Shadcn/UI
+## [Shadcn/UI](https://ui.shadcn.com/)
 
 **Description:** This is not a component library as much as it is super clean boilerplate code for you to build your own component library. It is not an npm package, but instead uses a CLI tool to copy the boilerplate into your code. It utilizes Radix UI to create an easy to theme & customize design system and has a CLI that enables simple NextJS integration. Their use of [`class-variance-authority`](https://cva.style/docs), [`clsx`](https://github.com/lukeed/clsx), and [`tailwind-merge`](https://github.com/dcastil/tailwind-merge) give the components a good developer experience. The unique paradigm of the "disappearing UI kit" enables devs to serve themselves when changing the behavior of a component, without requiring weird wrapper components or submitting a PR to an open source project.
 
@@ -76,7 +76,7 @@ Choose the following library if...
 - I'm skeptical by how much hype it's gotten in 2023
 
 
-## Tailwind UI
+## [Tailwind UI](https://tailwindui.com/)
 
 Description: Tailwind UI is a collection of Tailwind CSS templates, so it's less of a library and more of a copy/pastable set of snippets. It requires no new dependencies and has no developer CSS tooling like Shadcn & NextUI
 
@@ -118,3 +118,11 @@ Description: Tailwind UI is a collection of Tailwind CSS templates, so it's less
 - [Evergreen](https://evergreen.segment.com/)
   - Doesn't support server components.
   
+
+### Deployed Examples
+
+The following examples show implementing the same layout with each library's base styles. Some of the button/tag colors might be off as I tested out the ease of theming for each library.
+
+Next UI: https://master.d1zya8gou55sil.amplifyapp.com/
+Shadcn UI: https://master.d2b9vgyx8o1py9.amplifyapp.com/
+Tailwind UI: https://master.d3uml7hxpc1zux.amplifyapp.com/

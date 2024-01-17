@@ -25,9 +25,9 @@ export function CardDemo({
   ...props
 }: any) {
   return (
-    <Card className={cn( className)} {...props}>
-      <CardHeader className="relative h-[200px]">
-        <Image alt="nextui logo" fill={true} src={image}  />
+    <Card className={cn("w-[300px]", className)} {...props}>
+      <CardHeader className="p-0 relative">
+        <Image alt="nextui logo" height={180} width={300} src={image}  />
         <Badge
           className="absolute z-10 right-3 top-3 bg-white border-black border-2"
           variant="outline"
@@ -104,7 +104,7 @@ export function CardDemo({
         </div>
       </CardContent>
       <CardFooter>
-        <Button className="text-tiny text-white" color="primary" size="sm">
+        <Button variant="default" size="sm">
           Learn more
         </Button>
       </CardFooter>
